@@ -1,6 +1,6 @@
-# 🪆 Nesting Depth Parity CSS
+# 🪆 Nesting Depth Parity CSS <picture><img alt="CSS" src="https://img.shields.io/badge/CSS-663399"></picture>
 
-A tiny pure CSS utility that exposes the nesting depth parity through a custom property named `--evenodd`.
+A tiny pure CSS trick that exposes the nesting depth parity through a custom property named `--evenodd`.
 
 The variable automatically alternates between `odd` and `even` at each nesting level, allowing nested elements such as blockquotes, comments, lists, trees, menus, and other hierarchical structures to alternate their styling without JavaScript, preprocessors, extra classes, or hardcoded depth selectors.
 
