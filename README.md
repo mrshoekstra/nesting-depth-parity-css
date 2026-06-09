@@ -62,9 +62,11 @@ This project relies only on:
 * CSS function `var()` ✅ [Baseline Widely available](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/var)
 * CSS function `if()` 🔶 [Limited availability](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/if) (optional)
 
-The core functionality works without `if()`. The `if()` example is provided as a more concise alternative for browsers that support it.
+> [!IMPORTANT]
+> The core functionality works without `if()`. The `if()` example is provided as a more concise alternative for browsers that support it.
 
-Since the implementation is based entirely on modern CSS features, there are no runtime dependencies and no JavaScript fallback is required.
+> [!NOTE]
+> Since the implementation is based entirely on modern CSS features, there are no runtime dependencies and no JavaScript fallback is required.
 
 ## 🧠 Philosophy
 
