@@ -1,0 +1,11 @@
+blockquote {
+	--evenodd: odd;
+	background: if(
+		style(--evenodd: odd): whitesmoke;
+		else: snow;
+	);
+
+	@container style(--evenodd: odd) {
+		--evenodd: even;
+	}
+}

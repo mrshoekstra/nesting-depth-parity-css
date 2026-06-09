@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nesting Depth Parity CSS</title>
+<style>
+body {
+	font: 1rem sans-serif;
+}
+
+div {
+	--borderSize: 0.25rem;
+	--bgColor: #1e2226;
+	--evenodd: odd;
+	--gapSize: 1rem;
+	background: if(
+		style(--evenodd: odd): oklch(from var(--bgColor) 0.96 c h);
+		else: oklch(from var(--bgColor) 0.93 c h);
+	);
+	border-inline-start: var(--borderSize) solid #135;
+	border-radius: var(--borderSize);
+	margin-block: var(--gapSize);
+	margin-inline: 0;
+	padding-block: var(--gapSize);
+	padding-inline: calc(var(--gapSize) * 1.5);
+
+	@container style(--evenodd: odd) {
+		--evenodd: even;
+	}
+}
+</style>
+<h1>Nesting Depth Parity CSS</h1>
+<div>
+	@@@@@
+</div>
+@@@@@
+<div>
+	@@@@@
+	<div>
+		@@@@@
+	</div>
+	@@@@@
+</div>
+@@@@@
+<div>
+	@@@@@
+	<div>
+		@@@@@
+		<div>
+			@@@@@
+		</div>
+		@@@@@
+	</div>
+	@@@@@
+</div>
+@@@@@
+<div>
+	@@@@@
+	<div>
+		@@@@@
+		<div>
+			@@@@@
+			<div>
+				@@@@@
+				<div>
+					@@@@@
+				</div>
+				@@@@@
+			</div>
+			@@@@@
+			<div>
+				@@@@@
+				<div>
+					@@@@@
+					<div>
+						@@@@@
+					</div>
+					@@@@@
+				</div>
+				@@@@@
+			</div>
+			@@@@@
+		</div>
+		@@@@@
+		<div>
+			@@@@@
+			<div>
+				@@@@@
+				<div>
+					@@@@@
+					<div>
+						@@@@@
+					</div>
+					@@@@@
+				</div>
+				@@@@@
+			</div>
+			@@@@@
+		</div>
+		@@@@@
+	</div>
+	@@@@@
+	<div>
+		@@@@@
+	</div>
+	@@@@@
+</div>

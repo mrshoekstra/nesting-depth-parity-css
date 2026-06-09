@@ -1,0 +1,9 @@
+blockquote {
+	--evenodd: odd;
+	background: whitesmoke;
+
+	@container style(--evenodd: odd) {
+		--evenodd: even;
+		background: snow;
+	}
+}
