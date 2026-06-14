@@ -76,10 +76,12 @@ The goal is simple:
 
 > Expose nesting parity as a reusable CSS variable and let authors decide how to use it.
 
-## ⚖️ License
-
-Code released under the [MIT license](LICENSE.md).
-
 ## ❤️ Support
 
-If you found this code helpful, please consider making a donation or become a sponsor to support my work. Even a small donation can make a big difference!
+If this project saved you some time, please consider giving it a ⭐ **Star** on GitHub; it helps others discover the repository!
+
+If you would like to support my work further, please check out the **Sponsor this project** section on this repository page. Even a small contribution makes a big difference!
+
+## ⚖️ License
+
+Distributed under the [MIT License](LICENSE.md).
